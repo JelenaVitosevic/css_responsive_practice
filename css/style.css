@@ -1,0 +1,102 @@
+/* Apply below style to all elements in the page */
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Style the menu section */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*background: rgb(117, 201, 117);*/
+    height: 65px;
+    z-index: 100;
+}
+
+.header .nav-bar {
+    display: flex;
+}
+
+.header .nav-bar a {
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+    line-height: 65px;
+    color: antiquewhite;
+}
+
+.header .nav-bar a:hover {
+    filter: brightness(0.8);
+}
+
+/* aply different background color on each anchor menu item */
+.header .nav-bar a:nth-child(1) {
+    background: rgb(175, 94, 94);
+}
+.header .nav-bar a:nth-child(2) {
+    background: rgb(76, 127, 161);
+}
+.header .nav-bar a:nth-child(3) {
+    background: rgb(80, 148, 89);
+}
+.header .nav-bar a:nth-child(4) {
+    background: rgb(167, 100, 144);
+}
+.header .nav-bar a:nth-child(5) {
+    background: rgb(187, 164, 87);
+}
+
+/* style the main body section */
+.container {
+    display: flex;
+    width: 500%;
+    height: 100vh;
+}
+
+.container .main_section {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.container .main_section:nth-child(1) {
+    background: rgb(175, 94, 94);
+}
+.container .main_section:nth-child(2) {
+    background: rgb(76, 127, 161);
+}
+.container .main_section:nth-child(3) {
+    background: rgb(80, 148, 89);
+}
+.container .main_section:nth-child(4) {
+    background: rgb(167, 100, 144);
+}
+.container .main_section:nth-child(5) {
+    background: rgb(187, 164, 87);
+}
+
+/* Apply media queries to adjust styling for different devices = Make it responsive */
+@media (max-width: 750px) {
+    .header .nav-bar a span {
+        display: none; /* hide menu text, only show icon upto screen width of 750px */
+    }
+}
